@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+<a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <a-entity rotation="-90 0 0">
+            <a-torus position="0 0.5 0" color="green" radius="0.5"></a-torus>
+            <a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/uvgrid/UV_Grid_Sm.jpg" width="2.5" height="1.5" position="0 1 -1"></a-plane>
+            <a-cylinder color="yellow" height="2" radius="0.05"position="0 0 0"></a-cylinder>
+            <a-cylinder color="blue" height="2" radius="0.05" position="1 0 0"></a-cylinder>
+            <a-torus-knot color="orange" radius="0.5" position="1 0.5 0"></a-torus-knot>
+            <a-text value="Стогул" width="10" color="white" position="-1 0.5 3" width="3" font="Bebas_Neue_Cyrillic-msdf.json" negate="false"></a-text>
+        </a-entity>
+    </a-marker>
+</a-scene>
+
+</html>
